@@ -1,53 +1,107 @@
-# todo_native
+# 📝 Todo Native App
 
-A small Expo + React Native todo app skeleton using Expo Router and Convex for backend data. This project is a work-in-progress and provides a lightweight foundation for building a cross-platform (iOS / Android / Web) todo application.
+> A React Native todo application built with **Expo**, **Expo Router**, and **Convex**. This is a **learning project** currently under development.
 
-## Overview
+## 🎯 About This Project
 
-- **Platform:** Expo (React Native)
-- **Routing:** `expo-router`
-- **Backend / realtime DB:** `convex` (server functions and schema under `convex/`)
-- **Language:** TypeScript
+This project is part of a learning journey exploring modern cross-platform mobile development. It combines:
 
-This repo contains a simple Todo UI and basic Convex integration for persisting todos. Several areas are still incomplete and marked in the TODOs below.
+- **Expo & React Native** — Build iOS, Android, and Web apps from a single codebase
+- **Expo Router** — File-based routing similar to Next.js
+- **Convex** — Backend-as-a-service for real-time data syncing and server functions
+- **TypeScript** — Type-safe development
 
-## Features (implemented / planned)
+## 📦 Tech Stack
 
-- Add, list, and remove todos (core UI components present)
-- Per-platform run via Expo (`start`, `android`, `ios`, `web`)
-- Convex schema and server functions scaffolding under `convex/`
+| Layer | Technology |
+|-------|-----------|
+| **Frontend** | React Native, Expo |
+| **Navigation** | Expo Router |
+| **Backend** | Convex |
+| **Language** | TypeScript |
+| **Linting** | ESLint |
 
-## Quick Setup
+## ⚙️ Getting Started
 
-Requirements: Node.js (LTS), npm or yarn, and Expo CLI (optional if using `npx`).
+### Prerequisites
 
-Install dependencies:
+- **Node.js** (LTS recommended)
+- **npm** or **yarn**
+- **Expo CLI** (optional — `npx` works too)
 
+### Installation
+
+1. Clone the repository:
+```bash
+git clone <repository-url>
+cd todo_native
+```
+
+2. Install dependencies:
 ```bash
 npm install
-# or
-yarn install
 ```
 
-Run the app (Metro + Expo):
+3. Set up environment (if needed for Convex):
+```bash
+# Follow Convex setup instructions
+npx convex dev
+```
 
+### Running the App
+
+Start the development server:
 ```bash
 npm run start
-# or run on a specific platform:
-npm run android
-npm run ios
-npm run web
 ```
 
-Other scripts:
+Run on specific platforms:
+```bash
+npm run android    # Android emulator
+npm run ios        # iOS simulator
+npm run web        # Web browser
+```
 
-- `npm run reset-project` — project-specific reset helper (see `scripts/reset-project.js`).
-- `npm run lint` — run ESLint.
+### Other Commands
 
-## Project Structure
+- `npm run lint` — Check code with ESLint
+- `npm run reset-project` — Reset project to initial state
 
-- `app/` — Expo Router entry + screens (`_layout.tsx`, tabs, pages)
-- `components/` — UI components (`Header.tsx`, `TodoInput.tsx`, etc.)
+## 📁 Project Structure
+
+```
+app/              # Expo Router screens and layout
+├── _layout.tsx   # Root layout
+├── (tabs)/       # Tab-based navigation
+│   ├── index.tsx
+│   └── settings.tsx
+assets/           # Images and styling
+components/       # Reusable UI components
+├── TodoInput.tsx
+├── Header.tsx
+├── EmptyState.tsx
+└── LoadingSpinner.tsx
+convex/           # Backend schema and functions
+├── schema.ts
+├── todos.ts
+hooks/            # Custom React hooks
+├── useTheme.tsx
+```
+
+## 🚀 Features
+
+- ✅ Add, view, and delete todos
+- ✅ Persistent data with Convex
+- ✅ Cross-platform support (iOS/Android/Web)
+- 🔄 Real-time data sync
+- 🎨 Theme support
+
+## 📚 Learning Resources
+
+- [Expo Documentation](https://docs.expo.dev)
+- [Expo Router Guide](https://docs.expo.dev/routing/introduction/)
+- [Convex Documentation](https://docs.convex.dev)
+- [React Native Docs](https://reactnative.dev)
 - `convex/` — Convex schema, server functions, and generated API
 - `hooks/` — custom hooks (e.g. `useTheme.tsx`)
 - `assets/` — images and styles

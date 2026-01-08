@@ -65,7 +65,19 @@ export default function Index() {
     setEditText(todo.text)
     setEditingId(todo._id)
   }
-  const handleSaveTodo = async () =>{}
+  const handleSaveTodo = async () =>{
+    if(editingId) {
+
+      try {
+        await updateTodo({id: editingId, text: editText.trim()})
+        setEditingId(null)
+        setEditText("")
+      } catch (error) {
+        console.log("Error updating todo:", error);
+        Alert.alert("Error", "Failed to update todo");
+      }
+    }
+  }
   const handleCancelEdit = () =>{}
 
   
