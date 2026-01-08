@@ -1,5 +1,5 @@
 import { View, Text, ActivityIndicator } from "react-native";
-import { useTheme } from "@/hooks/useTheme";
+import  useTheme  from "@/hooks/useTheme";
 import { createHomeStyles } from "@/assets/styles/home.styles";
 import { LinearGradient } from "expo-linear-gradient";
 
