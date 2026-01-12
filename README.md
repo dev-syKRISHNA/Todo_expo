@@ -286,6 +286,25 @@ Notable files:
 - The app uses Expo SDK ~54 and React Native 0.81.x. Keep Expo CLI and platform tooling compatible with those versions.
 - Convex config and local server usage: see `convex/README.md` (if present) and the Convex docs. The repo includes generated API files under `convex/_generated/`.
 
+## ⚠️ Known Issues & UI-Only Features
+
+### UI-Only Features (Not Functional)
+These features have UI components in the Settings screen but **do not have actual implementation**:
+
+- **Notifications Toggle** — Visual switch only, push notifications are not implemented
+  - The toggle appears in Preferences but doesn't do anything
+  - No notification logic or integration exists
+  
+- **Auto Sync Toggle** — Visual switch only, sync is always active
+  - The toggle appears in Preferences but has no effect
+  - The app always performs **real-time sync** through Convex's `useQuery` and `useMutation` hooks automatically
+  - Toggling this switch does not pause or resume syncing
+
+### Other Limitations
+- **No user authentication** — All todos are global and shared across all users (no private/per-user todos)
+- **No offline support** — Requires active network connection for Convex synchronization
+- **No data persistence** — Without network, cached data cannot be accessed
+
 ## TODO / Roadmap
 
 - Wire up full CRUD flow with Convex (if not already complete).
