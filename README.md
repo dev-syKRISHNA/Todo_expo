@@ -4,7 +4,7 @@
 
 ## 🎯 About This Project
 
-This project demonstrates modern mobile development best practices using cutting-edge technologies. It showcases:
+This is a **learning project** created while following a comprehensive YouTube tutorial. It demonstrates modern mobile development best practices using cutting-edge technologies:
 
 - **Expo & React Native** — True cross-platform development (iOS, Android, Web)
 - **Expo Router** — File-based navigation with native feel
@@ -12,6 +12,8 @@ This project demonstrates modern mobile development best practices using cutting
 - **TypeScript** — Full type safety across the stack
 - **React 19** — Latest React features and patterns
 - **Modern UI/UX** — Gradient designs, smooth animations, and haptic feedback
+
+> **Tutorial Credit**: This project was built following the excellent tutorial by [Codesistency](https://youtu.be/q3HE1dFiJBI?si=Dw3Pc8_jGYT00Xog)
 
 ## ✨ Key Features
 
@@ -295,56 +297,24 @@ Notable files:
 
 Open a PR or file issues for missing features or bugs. If you work on Convex endpoints, update `convex/_generated/` and `convex/README.md` as needed.
 
-## License
+## 📄 License
 
-This project is currently private. Add a license if you plan to open-source it.
-# Welcome to your Expo app 👋
+This project is currently private. Add a license (MIT, Apache 2.0, etc.) if you plan to open-source it.
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+## 👨‍💻 Author
 
-## Get started
+**dev-syKRISHNA**
+- GitHub: [@dev-syKRISHNA](https://github.com/dev-syKRISHNA)
+- Repository: [Todo_expo](https://github.com/dev-syKRISHNA/Todo_expo)
 
-1. Install dependencies
+## 🙏 Acknowledgments
 
-   ```bash
-   npm install
-   ```
+- **Tutorial by [Codesistency](https://youtu.be/q3HE1dFiJBI?si=Dw3Pc8_jGYT00Xog)** — This project was built following this excellent YouTube tutorial to learn Expo and Convex
+- Built with [Expo](https://expo.dev)
+- Backend powered by [Convex](https://convex.dev)
+- Icons from [Expo Vector Icons](https://icons.expo.fyi)
+- Inspired by modern todo app design patterns
 
-2. Start the app
+---
 
-   ```bash
-   npx expo start
-   ```
-
-In the output, you'll find options to open the app in a
-
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
-```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+**Made with ❤️ using Expo, React Native, and Convex**
